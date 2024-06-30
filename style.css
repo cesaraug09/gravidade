@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    background: rgb(15, 15, 15);
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.conteudo{
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    background: rgb(0, 0, 0);
+    width: 500px;
+    height: 500px;
+}
+
+.parede{
+    position: absolute;
+    background: green;
+    width: 30px;
+    height: 500px;
+}
+
+.chao{
+    bottom: 0;
+    position: absolute;
+    background: green;
+    width: 500px;
+    height: 30px;
+}
+
+.plataforma{
+    position: absolute;
+    background: green;
+    width: 200px;
+    height: 30px;
+}
+
+.player{
+    margin: 30px;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background: rgb(147, 79, 211);
+    border-radius: 50px;
+}
+
+#direita{
+    left: 500px;
+}
+
+#esquerda{
+    left: 0px;
+}
+
+#plataforma1{
+    left: 300px;
+    bottom: 100px;
+}
+#plataforma2{
+    left: 30px;
+    bottom: 200px;
+}
