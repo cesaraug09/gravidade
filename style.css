@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/games');
+
 *{
     margin: 0;
     padding: 0;
@@ -43,12 +45,17 @@ body{
 }
 
 .player{
+    width: 60px;
+    height: 100px;
     margin: 30px;
     position: absolute;
-    height: 30px;
-    width: 30px;
-    background: rgb(147, 79, 211);
-    border-radius: 50px;
+}
+.player2{
+    width: 60px;
+    height: 100px;
+    margin: 30px;
+    position: absolute;
+    filter: hue-rotate(300deg);
 }
 
 #direita{
@@ -66,4 +73,45 @@ body{
 #plataforma2{
     left: 30px;
     bottom: 200px;
+}
+
+#plataforma3{
+    left: 170px;
+    bottom: 300px;
+}
+
+.escolherplayers{
+    display: flex;
+    align-items: center;
+    width: 240px;
+    bottom: 500px;
+    height: 60px;
+    position: absolute;
+}
+
+.bottao{
+    font-family: 'Games', sans-serif;
+    color: rgb(96, 180, 47);
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: -20px;
+    background: rgb(0, 0, 0);
+    padding: 20px;
+    cursor: pointer;
+}
+
+.bottao:hover{
+    font-family: 'Games', sans-serif;
+    color: rgb(143, 248, 81);
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: -20px;
+    background: rgb(16, 11, 39);
+    padding: 20px;
+    box-shadow: 0px 0px 10px green;
+    cursor: pointer;
+}
+
+#imagemp2{
+    position: absolute;
 }
