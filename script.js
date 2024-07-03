@@ -15,6 +15,7 @@ var scriptElement = document.querySelector('script[src="script.js"]');
 mudarPersonagem(pose)
 
 function mudarPersonagem(pose){
+    console.log("mudou")
     player.src= `spritesAutorais/${pose}.gif`;
 }
 

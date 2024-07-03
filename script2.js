@@ -14,7 +14,9 @@ let andandoEsquerda = false;
 mudarPersonagem(pose)
 
 function mudarPersonagem(pose){
+    if(player.src!== "spritesAutorais/breath.gif"){
     player.src= `spritesAutorais/${pose}.gif`;
+}
 }
 
 function coop(){
@@ -107,7 +109,7 @@ function atrito (){
 }
 
 function paredes (){
-    if(xPlayer >=210 && yPlayer >=40 && yPlayer < 100 || xPlayer >=200 && xPlayer <=205 && yPlayer>=230 && yPlayer <=290){
+    if(xPlayer >=210 && yPlayer >=40 && yPlayer < 100 || xPlayer <=200 && yPlayer>=130 && yPlayer <=190 || xPlayer >= 80 && xPlayer <= 100 && yPlayer >=230 && yPlayer <290){
         return true;
     } else {
         return false;
@@ -132,8 +134,8 @@ function plataforma (){
 const rodando = () => {
     player.style.left = `${xPlayer}px`;
     player.style.bottom = `${yPlayer}px`;
-    //player.style.left = `82px`;
-    //player.style.bottom = `290px`;
+    //player.style.left = `340px`;
+    //player.style.bottom = `280px`;
 
     if(yPlayer > ground && desligargravidade == 0){
         gravity();
@@ -198,8 +200,10 @@ document.addEventListener('keyup', function(event){
         Rightpressionada = false;
     }
     if(Rightpressionada == false && Leftpressionada == false && Uppressionada == false){
+        if(pose!='breath'){
         pose = 'breath'
         mudarPersonagem(pose)
+        }
     }
 } )
 
@@ -378,7 +382,12 @@ document.addEventListener('keyup', function(event){
         Rightpressionada2 = false;
     }
     if(Rightpressionada2 == false && Leftpressionada2 == false && Uppressionada2 == false){
+        if(pose2!='breath2'){
         pose2 = 'breath2'
         mudarPersonagem2(pose2)
     }
+    }
 } )
+
+
+singleplayer()
